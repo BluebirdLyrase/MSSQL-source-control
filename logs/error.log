@@ -18,4 +18,16 @@ Date: Mon May 13 2024 10:47:24 GMT+0700 (Indochina Time). Err: Error: dsdsds
     at exports.generateAllObject (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\src\source-control\controller.js:15:45)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)Date: Mon May 13 2024 16:17:03 GMT+0700 (Indochina Time). Err: TypeError: service.createFolder is not a function
     at exports.generateAllObject (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\src\source-control\controller.js:14:19)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)Date: Mon May 13 2024 16:52:14 GMT+0700 (Indochina Time). Err: ReferenceError: generateAllTable is not defined
+    at exports.generate (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\src\source-control\controller.js:8:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)Date: Mon May 13 2024 16:54:08 GMT+0700 (Indochina Time). Err: RequestError: Incorrect syntax near '='.
+    at handleError (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\node_modules\mssql\lib\tedious\request.js:384:15)
+    at Connection.emit (node:events:520:28)
+    at Connection.emit (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\node_modules\tedious\lib\connection.js:959:18)
+    at RequestTokenHandler.onErrorMessage (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\node_modules\tedious\lib\token\handler.js:285:21)
+    at Readable.<anonymous> (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\node_modules\tedious\lib\token\token-stream-parser.js:18:33)
+    at Readable.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)
+    at Readable.push (node:internal/streams/readable:391:5)
+    at nextAsync (node:internal/streams/from:194:22)

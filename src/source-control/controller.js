@@ -2,8 +2,13 @@ const model = require('./model');
 const _ = require('lodash');
 const service = require('./service');
 
-exports.generateAllObject = async () => {
+exports.generate = async () => {
   service.initFolder();
+  await generateAllObject();
+  await generateAllTable();
+};
+
+const generateAllObject = async () => {
   const data = await model.getAllObject();
   const groupedTypeList = _.groupBy(data, 'type_desc');
   const groupedNameList = _.mapValues(groupedTypeList, (values) =>
@@ -19,5 +24,17 @@ exports.generateAllObject = async () => {
         .join('');
       service.createFile(fileName, folderName, content);
     }
+  }
+};
+
+const generateAllTable = async () => {
+  const tableNameList = await model.getAllTableName();
+  for (const tableName of tableNameList.map((e) => e.table_name)) {
+    const contentList = await model.getTableDetail(tableName);
+    service.createFile(
+      tableName,
+      'TABLE',
+      contentList.map((e) => e.line).join('\n')
+    );
   }
 };

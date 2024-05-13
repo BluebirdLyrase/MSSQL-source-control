@@ -1,5 +1,5 @@
 const { targetSQL } = require('./sql/config/target');
-const { generateAllObject } = require('./src/source-control/controller');
+const { generate: generateAllObject } = require('./src/source-control/controller');
 const fs = require('fs');
 // ERROR LOG MANAGEMENT
 // =====================================================================
