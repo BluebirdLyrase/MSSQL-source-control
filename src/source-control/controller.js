@@ -11,7 +11,6 @@ exports.generateAllObject = async () => {
   );
 
   for (const objectType of Object.keys(groupedNameList)) {
-    // await service.createFolder(objectType);
     for (const objectName of Object.keys(groupedNameList[objectType])) {
       const fileName = groupedNameList[objectType][objectName][0].name;
       const folderName = objectType;
