@@ -34,7 +34,7 @@ exports.getTargetSQL = getTargetSQL;
 exports.testTargetSQL = async () => {
   try {
     const targetSQL = await getTargetSQL();
-    const result = await targetSQL.query`select 1+1`;
+    await targetSQL.query`select 1+1`;
     console.info('###DATABASE CONNECTION SUCCESSFUL###');
     return sql;
   } catch (err) {
