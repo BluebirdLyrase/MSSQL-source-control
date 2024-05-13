@@ -1,4 +1,4 @@
-const { testTargetSQL } = require('./sql/config/target');
+const { targetSQL } = require('./sql/config/target');
 const fs = require('fs');
 // ERROR LOG MANAGEMENT
 // =====================================================================
@@ -16,5 +16,3 @@ process.on('uncaughtException', (err) => {
   errorLogStream.write(`Date: ${date}. Err: ${err.stack}`);
   return;
 });
-
-testTargetSQL();

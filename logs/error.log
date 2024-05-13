@@ -5,4 +5,11 @@ Date: Mon May 13 2024 10:47:24 GMT+0700 (Indochina Time). Err: Error: dsdsds
     at Module.load (node:internal/modules/cjs/loader:1287:32)
     at Module._load (node:internal/modules/cjs/loader:1103:12)
     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:168:12)
+    at node:internal/main/run_main_module:30:49Date: Mon May 13 2024 11:47:04 GMT+0700 (Indochina Time). Err: TypeError: testTargetSQL is not a function
+    at Object.<anonymous> (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\index.js:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1480:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+    at Module.load (node:internal/modules/cjs/loader:1287:32)
+    at Module._load (node:internal/modules/cjs/loader:1103:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:168:12)
     at node:internal/main/run_main_module:30:49
