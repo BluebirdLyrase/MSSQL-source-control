@@ -1,4 +1,5 @@
 const { targetSQL } = require('./sql/config/target');
+const { generateAllObject } = require('./src/source-control/controller');
 const fs = require('fs');
 // ERROR LOG MANAGEMENT
 // =====================================================================
@@ -16,3 +17,5 @@ process.on('uncaughtException', (err) => {
   errorLogStream.write(`Date: ${date}. Err: ${err.stack}`);
   return;
 });
+
+generateAllObject();

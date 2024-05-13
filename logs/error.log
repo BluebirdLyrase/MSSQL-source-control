@@ -12,4 +12,10 @@ Date: Mon May 13 2024 10:47:24 GMT+0700 (Indochina Time). Err: Error: dsdsds
     at Module.load (node:internal/modules/cjs/loader:1287:32)
     at Module._load (node:internal/modules/cjs/loader:1103:12)
     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:168:12)
-    at node:internal/main/run_main_module:30:49
+    at node:internal/main/run_main_module:30:49Date: Mon May 13 2024 15:54:22 GMT+0700 (Indochina Time). Err: TypeError: groupedNameList is not iterable
+    at exports.generateAllObject (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\src\source-control\controller.js:11:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)Date: Mon May 13 2024 16:04:47 GMT+0700 (Indochina Time). Err: TypeError: groupedNameList[objectType] is not iterable
+    at exports.generateAllObject (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\src\source-control\controller.js:15:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)Date: Mon May 13 2024 16:17:03 GMT+0700 (Indochina Time). Err: TypeError: service.createFolder is not a function
+    at exports.generateAllObject (C:\Users\pisit.k\Documents\GitHub\MSSQL-source-control\src\source-control\controller.js:14:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
